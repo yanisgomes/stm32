@@ -1,3 +1,4 @@
+# The Docker image that will be used to build your app
 image: python:latest
 pages:
   stage: deploy
