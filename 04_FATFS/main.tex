@@ -1,0 +1,108 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --------------------------------------------------------
+% Rho
+% LaTeX Template
+% Version 1.0 (28/04/2024)
+%
+% Author: 
+% Guillermo Jimenez (memo.notess1@gmail.com)
+% 
+% License:
+% Creative Commons CC BY 4.0
+% --------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --------------------------------------------------------
+%					  FOR SPANISH BABEL
+% --------------------------------------------------------
+% \usepackage[spanish,es-nodecimaldot,es-noindentfirst]{babel}
+% --------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[9pt,a4paper,twoside]{rho}
+\usepackage[english]{babel}
+\usepackage{rhoenvs}
+
+%----------------------------------------------------------
+% TITLE
+%----------------------------------------------------------
+
+\title{Prise en main de la STM32F746}
+
+%----------------------------------------------------------
+% AUTHORS AND AFFILIATIONS
+%----------------------------------------------------------
+
+\author[1,$\dagger$]{Yanis Gomes}
+
+
+%----------------------------------------------------------
+
+\affil[1]{Ecole Normale Supériure de Paris-Saclay}
+
+
+%----------------------------------------------------------
+% DATES
+%----------------------------------------------------------
+
+\dates{May 2, 2024}
+
+%----------------------------------------------------------
+% FOOTER INFORMATION
+%----------------------------------------------------------
+
+\etal{Yanis Gomes}
+\smalltitle{Prise en main STM32}
+\institution{ENS Paris-Saclay}
+\date{May 1, 2024} %\today
+
+%----------------------------------------------------------
+% ARTICLE INFORMATION
+%----------------------------------------------------------
+
+%\corres{Provide the corresponding author information and publisher here.}
+%\email{example@organization.com.}
+%\doi{\url{https://www.doi.org/exampledoi/XXXXXXXXXX}}
+%
+%\received{April 1, 2024}
+%\revised{April 3, 2024}
+%\accepted{April 20, 2024}
+%\published{April 28, 2024}
+%
+%\license{Rho LaTeX Class \ccLogo\ This document is licensed under Creative %Commons CC BY 4.0.}
+%
+%----------------------------------------------------------
+% ABSTRACT
+%----------------------------------------------------------
+
+\begin{abstract}
+    Le rapport étudie les techniques de super-résolution pour améliorer la résolution d'image au-delà des capacités des détecteurs en utilisant plusieurs images de basse résolution. Il aborde le problème inverse courant dans les systèmes de mesure consistant à inverser les déficiences des images de basse résolution pour améliorer les détails et la netteté. Les techniques incluent l'estimation des déplacements d'image pour les aligner et les superposer afin de créer une composition de plus haute résolution, suivie d'une déconvolution pour réduire le flou induit par le capteur. L'étude applique également les méthodes des moindres carrés et des moindres carrés régularisés pour minimiser les erreurs de reconstruction, avec des simulations MATLAB confirmant des améliorations substantielles de la qualité d'image. Ces résultats valident l'utilité de la super-résolution dans les applications nécessitant une résolution d'image améliorée à partir de données limitées.
+\end{abstract}
+
+%----------------------------------------------------------
+
+\keywords{Super-résolution, Déconvolution, Moindres carrés, Régularisation}
+
+%----------------------------------------------------------
+
+\begin{document}
+
+    \maketitle
+    \thispagestyle{firststyle}
+    % \tableofcontents
+
+%----------------------------------------------------------
+
+
+\section*{Introduction}
+Dans ce TP nous nous intéresseronsà la reconstruction d'une image sur-résolue c'est-à-dire avec une résolution supérieur à celle du détecteur à partir de n images basse résolution.
+Ce problème entre dans la classe des problèmes inverses qui peuvent se poser lors de l'utilisation de systèmes de mesure réels.
+Le but de la sur-résolution est d'inverser le repliement présent dans les images basse résolution.
+
+\section*{Estimation des décalages}
+
+\section*{CONTACT}
+    \faEnvelope[regular]\ yanis.gomes@ens-paris-saclay.fr \\
+    \faLinkedin\ \href{https://www.linkedin.com/in/yanis-gomes-zbairi/}{Yanis Gomes}
+
+
+\end{document}
