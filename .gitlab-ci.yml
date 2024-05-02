@@ -1,0 +1,12 @@
+# The Docker image that will be used to build your app
+image: python:latest
+pages:
+  stage: deploy
+  only:
+    - master
+  script:
+    - pip install mkdocs-material
+    - mkdocs build --site-dir public
+  artifacts:
+    paths:
+      - public
